@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: white;
+}
+
+.main {
+    display: grid;
+}
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 6fr 3fr 1fr;
+    width: 85vh;
+    height: 10vh;
+}
+
+.title {
+    grid-column: 1 / 2;
+    align-content: center;
+    justify-content: start;
+}
+
+.sketch-container {
+    grid-column: 2 / 3;
+    width: 85vh;
+    height: 85vh;
+    margin: 0 auto;
+}
+
+.grid-cell {
+    border: 1px solid black;
+}
