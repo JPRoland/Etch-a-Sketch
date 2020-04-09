@@ -14,12 +14,25 @@ function createGrid(size = 16) {
     }
 }
 
-const clearBtn = document.querySelector('.header__btn-clear');
+const clearBtn = document.querySelector('.btn-clear');
 clearBtn.addEventListener('click', () => {
     document.querySelectorAll('.grid-cell').forEach(cell => {
         cell.style.backgroundColor = 'white';
         cell.style.borderColor = 'black';
     })
+});
+
+const resizeBtn = document.querySelector('.btn-resize');
+resizeBtn.addEventListener('click', (e) => {
+    const size = prompt("Please enter Grid Size: 1 - 64", 16);
+    if (!size || size < 1 || size > 64 || isNaN(size)) {
+        alert("Size must be between 1 and 64");
+    } else {
+        document.querySelectorAll('.grid-cell').forEach(cell => {
+            cell.remove();
+        });
+        createGrid(size);
+    }
 });
 
 window.addEventListener('load', () => createGrid());
