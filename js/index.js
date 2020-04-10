@@ -7,7 +7,7 @@ function createGrid(size = 16) {
         const gridCell = document.createElement('div');
         gridCell.className = 'grid-cell';
         gridCell.addEventListener('mouseenter', (e) => {
-            e.target.style.backgroundColor = 'black';
+            e.target.style.backgroundColor = '#383636';
             e.target.style.borderColor = 'white';
         });
         sketchContainer.appendChild(gridCell);
@@ -18,7 +18,7 @@ const clearBtn = document.querySelector('.btn-clear');
 clearBtn.addEventListener('click', () => {
     document.querySelectorAll('.grid-cell').forEach(cell => {
         cell.style.backgroundColor = 'white';
-        cell.style.borderColor = 'black';
+        cell.style.borderColor = '#383636';
     })
 });
 

@@ -24,7 +24,6 @@
 }
 
 .btn {
-    /* background-color: rgb(235, 76, 27); */
     background: linear-gradient(180deg, rgba(154,1,237,1) 0%, rgba(233,5,176,1) 50%, rgba(255,131,0,1) 100%);
     border-radius: 6px;
     padding: 6px 20px 6px 20px;
@@ -35,6 +34,11 @@
     letter-spacing: 1px;
     box-shadow: 2px 2px #383636;
     text-shadow: 2px 2px #383636;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(180deg, rgb(171, 59, 231) 0%, rgb(231, 52, 186) 50%, rgb(250, 161, 65) 100%);
 }
 
 .title {
@@ -51,12 +55,12 @@
     width: 85vh;
     height: 85vh;
     margin: 15px auto;
-    border: 5px solid gray;
+    border: 5px solid #383636;
     border-radius: 5px;
 }
 
 .grid-cell {
-    border: 1px solid gray;
+    border: 1px solid #383636;
     background-color: white;
 }
 
